@@ -4,6 +4,13 @@ Code licensed under the BSD License:
 http://developer.yahoo.net/yui/license.txt
 version: 2.7.0
 */
+
+/*
+There were css rendering issues in dynamically loading this css from 
+"http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css" in github pages,
+so downloaded it and made it a local stylesheet.
+*/
+
 html {
     color: #000;
     background: #FFF;
