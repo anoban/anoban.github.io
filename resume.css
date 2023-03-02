@@ -109,8 +109,8 @@ h4 {
 }
 
 p {
-    font-size: 100%;
-    line-height: 18px;
+    font-size: 115%;
+    line-height: 20px;
     padding-right: 3em;
 }
 
@@ -191,8 +191,6 @@ a#pdf:hover {
     border: none;
 }
 
-.skills-list {}
-
 .skills-list ul {
     margin: 0;
 }
@@ -216,6 +214,10 @@ a#pdf:hover {
 
 .talent h2 {
     margin-bottom: 6px;
+}
+
+.talent li {
+    font-size: 120%;
 }
 
 #srt-ttab {
