@@ -108,8 +108,13 @@ h4 {
     color: #333;
 }
 
+h3 a {
+    display: inline-block;
+    vertical-align: middle;
+}
+
 p {
-    font-size: 115%;
+    font-size: 120%;
     line-height: 20px;
     padding-right: 3em;
 }
@@ -157,11 +162,12 @@ p.enlarge span {
 /* //-- section styles -- */
 
 a#pdf {
-    display: block;
-    float: left;
+    display: inline-block;
+    position: relative;
+    left: 0%;
     background: #666;
     color: white;
-    padding: 6px 50px 6px 12px;
+    padding: 6px 12px 6px 12px;
     margin-bottom: 6px;
     text-decoration: none;
 }
@@ -213,7 +219,8 @@ a#pdf:hover {
 }
 
 .talent h2 {
-    margin-bottom: 6px;
+    margin-bottom: 4%;
+    font-style: italic;
 }
 
 .talent li {
@@ -236,4 +243,12 @@ a#pdf:hover {
 
 .yui-gf div.first {
     width: 12.3%;
+}
+
+h3 svg.icon-tabler {
+    display: inline-block;
+    vertical-align: bottom;
+    overflow: hidden;
+    position: relative;
+    right: .5rem;
 }
