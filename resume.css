@@ -42,15 +42,16 @@ body {
 
 
 #inner {
-    padding: 10px 80px;
+    padding: 0px 80px;
     margin: 80px auto;
     background: #FDFFF4;
     border: solid #666;
-    border-width: 8px 0 2px 0;
+    border-width: 12px 0px 6px 0px;
 }
 
 .yui-gf {
     margin-bottom: 2em;
+    margin-left: 0rem;
     padding-bottom: 2em;
     border-bottom: 1px solid #ccc;
 }
@@ -164,7 +165,7 @@ p.enlarge span {
 a#pdf {
     display: inline-block;
     position: relative;
-    left: 0%;
+    left: 0px;
     background: #666;
     color: white;
     padding: 6px 12px 6px 12px;
@@ -239,6 +240,12 @@ a#pdf:hover {
 /* --// override to force 1/8th width grids -- */
 .yui-gf .yui-u {
     width: 80.2%;
+}
+
+.yui-u {
+    margin-left: 0px;
+    margin-right: 0px;
+    min-width: 160px;
 }
 
 .yui-gf div.first {
