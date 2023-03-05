@@ -259,3 +259,25 @@ h3 svg.icon-tabler {
     position: relative;
     right: .5rem;
 }
+
+div.yui-u ol li {
+    display: list-item;
+    list-style-position: inside;
+    list-style-type: decimal-leading-zero;
+    font-size: 120%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 15px;
+}
+
+div.yui-u ol li ol li {
+    display: list-item;
+    list-style-position: inside;
+    list-style-type: upper-roman;
+    font-size: 120%;
+}
+
+div.yui-u ol {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
