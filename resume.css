@@ -265,16 +265,23 @@ div.yui-u ol li {
     list-style-position: inside;
     list-style-type: decimal-leading-zero;
     font-size: 120%;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     padding-left: 15px;
+}
+
+div.yui-u ol li p {
+    font-size: 110%;
+    color: brown;
+    text-indent: 25px;
 }
 
 div.yui-u ol li ol li {
     display: list-item;
     list-style-position: inside;
     list-style-type: upper-roman;
-    font-size: 120%;
+    font-size: inherit;
+    padding-left: 40px;
 }
 
 div.yui-u ol {
