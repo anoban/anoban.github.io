@@ -299,3 +299,13 @@ div.yui-u details ul ol {
     padding-left: 20px;
     font-size: 110%;
 }
+
+div#personal {
+    font-size: 110%;
+    font-style: italic;
+}
+
+div#personal h3 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
