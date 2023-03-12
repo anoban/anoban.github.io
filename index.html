@@ -84,6 +84,18 @@
 
 						<div class="yui-gf">
 							<div class="yui-u first">
+								<h2>Personal</h2>
+							</div>
+							<div class="yui-u">
+								<h3>Date of birth: 18 Jan 1997</h3><br>
+								<h3 id="_age"></h3><br>
+								<h3>Sex: Male</h3><br>
+								<h3>Nationality: Sri Lankan</h3><br>
+							</div>
+						</div><!--// .yui-gf -->
+
+						<div class="yui-gf">
+							<div class="yui-u first">
 								<h2>Skills</h2>
 							</div>
 							<div class="yui-u">
@@ -109,7 +121,7 @@
 								<div class="talent">
 									<h2>Application development</h2>
 									<p>Capable of solving problems of moderate complexity programmatically. Experienced
-										with Python, C, R, HTML/CSS and x86-64 assembly (in that order). Good
+										with Python, C, R, HTML/CSS, Rust and x86-64 assembly (in that order). Good
 										familiarity with developer tools like Visual Studio, Visual Studio Code, Jupyter
 										Lab and version control systems (Git/GitHub).
 									</p>
@@ -141,11 +153,11 @@
 								</ul>
 
 								<ul class="talent">
-									<li>C, Python & R</li>
+									<li>C, Rust, Python & R</li>
 									<li>HTML, CSS & JavaScript</li>
 									<li>Microsoft Excel</li>
-									<li>Microsoft Visual Studio</li>
 									<li>LLVM</li>
+									<li>Microsoft Visual Studio</li>
 									<li class="last">Git/GitHub</li>
 								</ul>
 							</div>
@@ -427,6 +439,20 @@
 
 	</div><!--// doc -->
 
+	<script>
+
+		function updateAge() {
+			const birthday = new Date("1997-01-18");
+			const today = Date.now();
+			// today - birthday will give the time difference in milliseconds.
+			var diff = (today - birthday) / (1000 * 60 * 60 * 24 * 365);
+			diff = Math.floor(diff);
+			document.getElementById("_age").textContent = `Age: ${diff} years.`;
+		};
+
+		updateAge();
+
+	</script>
 
 </body>
 
