@@ -459,11 +459,10 @@
 		function updateAge() {
 
 			const birthday = new Date("1997-01-18");
+			// new Date() returns the current date as a Date object.
 			const today = new Date();
 
-			var years = 0;
-			var months = 0;
-			var days = 0;
+			var years = 0, months = 0, days = 0;
 
 			// This conditional will prevent computing full year difference when current date is before 18 January.
 			if ((today.getMonth() === 0) /* January */ && today.getDate() < 18 /* 18 */) {
