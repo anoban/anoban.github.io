@@ -29,7 +29,7 @@
 					<div class="yui-u">
 						<div class="contact-info">
 
-							<h3><a id="pdf" href="#" onclick="window.print()">Download as PDF</a></h3>
+							<h3><a id="pdf" href="#" onclick="print_cv()">Download as PDF</a></h3>
 
 							<h3><svg xmlns="http://www.w3.org/2000/svg" class="icon-tabler" width="25px" height="25px"
 									viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
@@ -482,6 +482,21 @@
 		};
 
 		updateAge();
+
+		function print_cv() {
+			// When Download as PDF is clicked change the element `_age` to display just the years.
+			// Years, months & days format will look unprofessional in a .pdf :(
+			const birthday = new Date("1997-01-18");
+			const today = new Date();
+			var years = 0
+			if ((today.getMonth() === 0) /* January */ && today.getDate() < 18 /* 18 */) {
+				years = today.getFullYear() - birthday.getFullYear() - 1;
+			} else {
+				years = today.getFullYear() - birthday.getFullYear();
+			}
+			document.getElementById("_age").textContent = `Age: ${years} years`;
+			window.print();
+		}
 
 	</script>
 
