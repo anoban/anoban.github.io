@@ -469,11 +469,16 @@
 				years = today.getFullYear() - birthday.getFullYear() - 1;
 				months = 11;
 				days = 13 + today.getDate();
-			} else {
+
+				// When date is less than 18 but month is not January,
+			} else if (today.getDate() < 18) {
 				years = today.getFullYear() - birthday.getFullYear();
 				// getMonth() returns 0 - 11
 				// If March 28, this will return 2.
-				// Instead of adding 1 and then subtracting 1, just leave it as is.
+				months = today.getMonth() - 1;
+				days = today.getDate() + 13;
+			} else {
+				years = today.getFullYear() - birthday.getFullYear();
 				months = today.getMonth();
 				days = today.getDate() - 18;
 			}
