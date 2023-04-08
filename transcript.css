@@ -18,6 +18,17 @@ table {
   overflow-x: auto;
   border-spacing: 0;
   background: #FDFFF4;
+  margin: 80px auto;
+  border: solid #666;
+  border-width: 15px 0px 10px 0px;
+}
+
+#table_title {
+  font-size: 30px;
+  font-style: italic;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
 }
 
 tbody {
@@ -38,6 +49,7 @@ th {
   top: 0;
   color: white;
   background: #990003;
+  font-style: italic;
   padding: 5px 10px;
   border-top-width: 0;
   border-left-width: 0;
