@@ -77,3 +77,14 @@ td:last-child {
 tr:last-child td {
   border-bottom-width: 0;
 }
+
+a#back {
+  display: inline-block;
+  position: relative;
+  left: 0px;
+  background: #666;
+  color: white;
+  padding: 6px 12px 6px 12px;
+  margin-bottom: 6px;
+  text-decoration: none;
+}
