@@ -1,3 +1,8 @@
+body {
+  font-family: Georgia;
+  color: #444;
+}
+
 table,
 th,
 td {
@@ -5,17 +10,19 @@ td {
 }
 
 table {
-  width: 80%;
+  width: 75%;
   /* max-width: 400px; 
   height: 240px; */
   margin: 0 auto;
   display: block;
   overflow-x: auto;
   border-spacing: 0;
+  background: #FDFFF4;
 }
 
 tbody {
   white-space: nowrap;
+  color: #444;
 }
 
 td {
@@ -29,7 +36,20 @@ td {
 th {
   position: sticky;
   top: 0;
-  background: #f6d9c0;
+  color: white;
+  background: #990003;
+  padding: 5px 10px;
+  border-top-width: 0;
+  border-left-width: 0;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#gpa {
+  position: sticky;
+  top: 0;
+  background: #990003;
+  color: white;
   padding: 5px 10px;
   border-top-width: 0;
   border-left-width: 0;
