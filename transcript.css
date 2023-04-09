@@ -1,6 +1,7 @@
 body {
   font-family: Georgia;
   color: #444;
+  width: 100%;
 }
 
 table,
@@ -10,17 +11,13 @@ td {
 }
 
 table {
-  width: 75%;
-  /* max-width: 400px; 
-  height: 240px; */
-  margin: 0 auto;
+  width: 100%;
   display: block;
-  overflow-x: auto;
   border-spacing: 0;
   background: #FDFFF4;
-  margin: 80px auto;
-  border: solid #666;
-  border-width: 15px 0px 10px 0px;
+  border: solid #666 !important;
+  border-width: 15px 0px 10px 0px !important;
+  border-collapse: unset !important;
 }
 
 #table_title {
@@ -78,7 +75,7 @@ tr:last-child td {
   border-bottom-width: 0;
 }
 
-a#back {
+a.btn {
   display: inline-block;
   position: relative;
   left: 0px;
