@@ -1,7 +1,6 @@
 body {
   font-family: Georgia;
   color: #444;
-  width: 100%;
 }
 
 table,
@@ -10,14 +9,17 @@ td {
   border: 2px solid;
 }
 
-table {
-  width: 100%;
+#inner {
+  width: 60% !important;
+  padding: 0px 10px;
+  margin: 80px auto;
   display: block;
   border-spacing: 0;
   background: #FDFFF4;
   border: solid #666 !important;
   border-width: 15px 0px 10px 0px !important;
   border-collapse: unset !important;
+  page-break-inside: avoid !important;
 }
 
 #table_title {
@@ -39,6 +41,7 @@ td {
   border-left-width: 0;
   vertical-align: middle;
   text-align: left;
+  page-break-inside: avoid !important;
 }
 
 th {
@@ -81,7 +84,15 @@ a.btn {
   left: 0px;
   background: #666;
   color: white;
+  font-size: medium;
+  font-style: normal;
+  font-weight: normal;
   padding: 6px 12px 6px 12px;
   margin-bottom: 6px;
   text-decoration: none;
+}
+
+a.btn:hover {
+  background: black;
+  color: white;
 }
