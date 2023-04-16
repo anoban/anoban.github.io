@@ -289,6 +289,16 @@ div.yui-u ol {
     padding-bottom: 4px;
 }
 
+div.yui-u h3 {
+    font-size: 130%;
+    color: brown;
+}
+
+div.yui-u h4 {
+    font-size: 130%;
+    padding-top: 5px;
+}
+
 div.yui-u details summary {
     padding-top: 5px;
     padding-bottom: 5px;
