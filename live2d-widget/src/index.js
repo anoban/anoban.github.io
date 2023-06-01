@@ -1,7 +1,7 @@
-import Model from "./model.js";
 import showMessage from "./message.js";
-import randomSelection from "./utils.js";
+import Model from "./model.js";
 import tools from "./tools.js";
+import randomSelection from "./utils.js";
 
 function loadWidget(config) {
     const model = new Model(config);
@@ -33,7 +33,7 @@ function loadWidget(config) {
     })();
 
     function welcomeMessage(time) {
-        if (location.pathname === "/") { // 如果是主页
+        if (location.pathname === "/") { // If it is the home page
             for (let { hour, text } of time) {
                 const now = new Date(),
                     after = hour.split("-")[0],
