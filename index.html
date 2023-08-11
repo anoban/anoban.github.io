@@ -196,7 +196,8 @@
 								<h2><strong> Bachelor of Science (Botany) </strong> [2023]</h2>
 								<h3>(First class, Honours) 3.908 OGPA</h3>
 								<h3>University of Jaffna - Sri Lanka.</h3>
-								<h3><a id="pdf" href="./Transcript.pdf" download="Transcript-Anoban.K.pdf">View
+								<h3><a id="pdf" href="./Transcript.pdf" download="Transcript-Anoban.K.pdf"
+										class="transcript">View
 										Transcript</a></h3><br>
 							</div>
 							<div class="yui-u">
@@ -493,6 +494,7 @@
 		};
 
 		updateAge();
+		console.log(document.getElementsByClassName("transcript").textContent);
 
 		function print_cv() {
 			// When `Download as PDF` button is clicked make the element `_age` display just the years.
@@ -506,6 +508,8 @@
 				years = today.getFullYear() - birthday.getFullYear();
 			}
 			document.getElementById("_age").textContent = `Age: ${years} years`;
+			// When 'Download as PDF' is clicked, remove the View Transcript button.
+			document.getElementsByClassName("transcript")[0].remove();
 			window.print();
 		}
 
