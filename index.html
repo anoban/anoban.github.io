@@ -151,8 +151,8 @@
 
 								<ul class="talent">
 									<li>Microsoft Excel</li>
-									<li>Python and C</li>
-									<li>Windows SDK and Intel oneAPI Toolkit</li>
+									<li>C, C++ and Python</li>
+									<li>Windows SDK, WinDbg and Intel oneAPI Toolkit</li>
 									<li>Microsoft Visual Studio</li>
 									<li>Windows NT / Win32</li>
 									<li class="last">Git / GitHub</li>
@@ -436,7 +436,7 @@
 								<br>
 							</div>
 							<div class="yui-u">
-								<h2><strong>Windows systems programming</strong></h2>
+								<h2><strong>Systems programming (Windows)</strong></h2>
 								<ol>
 									<li>x86-64</li>
 									<li>C</li>
@@ -463,7 +463,7 @@
 
 	<script>
 
-		function updateAge() {
+		function update_age() {
 
 			const birthday = new Date("1997-01-18");
 			// new Date() returns the current date as a Date object.
@@ -493,8 +493,7 @@
 			document.getElementById("_age").textContent = `Age: ${years} years ${months} months and ${days} days.`;
 		};
 
-		updateAge();
-		console.log(document.getElementsByClassName("transcript").textContent);
+		update_age();
 
 		function print_cv() {
 			// When `Download as PDF` button is clicked make the element `_age` display just the years.
@@ -508,8 +507,12 @@
 				years = today.getFullYear() - birthday.getFullYear();
 			}
 			document.getElementById("_age").textContent = `Age: ${years} years`;
+
 			// When 'Download as PDF' is clicked, remove the View Transcript button.
-			document.getElementsByClassName("transcript")[0].remove();
+			// and remove the Download as PDF button itself from the .PDF
+			const pdfs = document.querySelectorAll("[id='pdf']");
+			for (i = 0; i < pdfs.length; ++i) pdfs[i].remove();
+
 			window.print();
 		}
 
