@@ -2,6 +2,7 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: normal;
     font-size: 100%;
+    background-color: #FDFFF4;
 }
 
 li.creds-list-category {
@@ -22,8 +23,8 @@ h3.cred-type {
 }
 
 h1 {
-    font-size: 200%;
-    text-transform: uppercase;
+    font-size: 150%;
+    font-style: italic;
 }
 
 table.creds-table tr.header th {
