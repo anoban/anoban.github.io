@@ -1,0 +1,43 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+li.creds-list-category {
+    margin-left: 10%;
+}
+
+img.folder-icon {
+    width: 40px;
+    height: 40px;
+    padding-top: 10px;
+}
+
+h3.cred-type {
+    font-size: 160%;
+    font-style: italic;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+h1 {
+    font-size: 200%;
+    text-transform: uppercase;
+}
+
+table.creds-table tr.header th {
+    width: max-content;
+    text-align: left;
+    color: #990003;
+}
+
+table.creds-table {
+    border: 2px solid;
+    width: 90%;
+}
+
+table.creds-table tr td.title {
+    font-style: italic;
+    font-weight: normal;
+}
