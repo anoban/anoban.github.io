@@ -33,6 +33,22 @@ table.creds-table tr.header th {
     color: #990003;
 }
 
+table.creds-table tr.specialization th {
+    width: max-content;
+    text-align: left;
+    font-style: italic;
+    color: #990003;
+    padding-top: 10px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid black;
+}
+
+th {
+    width: max-content;
+    text-align: left;
+    color: #990003;
+}
+
 table.creds-table {
     border: 2px solid;
     width: 90%;
