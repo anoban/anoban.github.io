@@ -36,8 +36,6 @@ body {
     color: #444;
 }
 
-
-
 #inner {
     padding: 0px 80px;
     margin: 80px auto;
@@ -176,6 +174,21 @@ a#pdf {
 }
 
 a#pdf:hover {
+    background: #222;
+}
+
+a#media {
+    display: inline-block;
+    position: relative;
+    left: 0px;
+    background: #666;
+    color: white;
+    padding: 6px 12px 6px 12px;
+    margin-bottom: 6px;
+    text-decoration: none;
+}
+
+a#media:hover {
     background: #222;
 }
 
