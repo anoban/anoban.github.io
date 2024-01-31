@@ -192,21 +192,22 @@ a#media:hover {
     background: #222;
 }
 
-.job {
+div.job {
     position: relative;
     margin-bottom: 1em;
     padding-bottom: 1em;
     border-bottom: 1px solid #ccc;
 }
 
-.job h4 {
+div.job h4 {
     position: absolute;
     top: 0.35em;
     right: 0
 }
 
-.job p {
+div.job p {
     margin: 0.75em 0 3em 0;
+    font-size: 120%;
 }
 
 .last {
@@ -229,19 +230,7 @@ a#media:hover {
     padding: 0
 }
 
-.talent {
-    width: 32%;
-    float: left
-}
 
-.talent h2 {
-    margin-bottom: 4%;
-    font-style: italic;
-}
-
-.talent li {
-    font-size: 120%;
-}
 
 #srt-ttab {
     margin-bottom: 100px;
@@ -280,8 +269,8 @@ div.yui-u ol li {
     list-style-position: inside;
     list-style-type: decimal-leading-zero;
     font-size: 120%;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 1%;
+    padding-bottom: 1%;
     padding-left: 15px;
 }
 
@@ -295,9 +284,32 @@ div.yui-u ul li {
     display: list-item;
     list-style-position: inside;
     font-size: 120%;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 1%;
+    padding-bottom: 1%;
     padding-left: 15px;
+}
+
+div.yui-u ul.talent li {
+    display: list-item;
+    list-style-position: inside;
+    font-size: 120%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 15px;
+}
+
+.talent {
+    width: 32%;
+    float: left
+}
+
+.talent h2 {
+    margin-bottom: 4%;
+    font-style: italic;
+}
+
+.talent li {
+    font-size: 120%;
 }
 
 div.yui-u#IELTS ul li {
