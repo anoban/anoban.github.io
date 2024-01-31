@@ -291,6 +291,16 @@ div.yui-u ol li p {
     text-indent: 25px;
 }
 
+div.yui-u ul li {
+    display: list-item;
+    list-style-position: inside;
+
+    font-size: 120%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+}
+
 div.yui-u#IELTS ul li {
     font-size: 120%;
     text-indent: 15px;
