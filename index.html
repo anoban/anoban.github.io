@@ -545,19 +545,15 @@
 	<script>
 
 		function update_age() {
-
 			const birthday = new Date("1997-01-18");
 			// new Date() returns the current date as a Date object.
 			const today = new Date();
-
 			var years = 0, months = 0, days = 0;
-
 			// This conditional will prevent computing full year difference when current date is before 18 January.
 			if ((today.getMonth() === 0) /* January */ && today.getDate() < 18 /* 18 */) {
 				years = today.getFullYear() - birthday.getFullYear() - 1;
 				months = 11;
 				days = 13 + today.getDate();
-
 				// When date is less than 18 but month is not January,
 			} else if (today.getDate() < 18) {
 				years = today.getFullYear() - birthday.getFullYear();
@@ -570,7 +566,6 @@
 				months = today.getMonth();
 				days = today.getDate() - 18;
 			}
-
 			document.getElementById("_age").textContent = `Age: ${years} years ${months} months and ${days} days.`;
 		};
 
@@ -593,11 +588,9 @@
 			// and remove the Download as PDF button itself from the .PDF
 			const pdfs = document.querySelectorAll("[id='pdf']");
 			for (i = 0; i < pdfs.length; ++i) pdfs[i].remove();
-
 			// remove the hyperlink button to media.html
 			const media = document.querySelectorAll("[id='media']");
 			for (i = 0; i < media.length; ++i) media[i].remove();
-
 			window.print();
 			location.reload(); // make the disappeared buttons reappear!
 		}
