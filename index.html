@@ -189,9 +189,8 @@
 									<h3>Department of Botany, University of Jaffna</h3>
 									<h3>[Oct 2023 - ]</h3>
 									<p>Assisting the faculty in preparation of practical sessions, coordinating
-										demonstrators while working in conjunction
-										with laboratory technicians and attendants in order to deliver a
-										satisfactory learning experience to students,
+										demonstrators while working in conjunction with laboratory technicians and
+										attendants in order to deliver a satisfactory learning experience to students,
 										walking the students through protocols, arranging and overseeing practical
 										examinations in assistance to lecturers, marking practical assignments,
 										answer scripts, undergraduate practical records and ensuring coherence and
@@ -232,7 +231,7 @@
 							<div class="yui-u">
 								<h2><strong>General Certificate Examinations (G.C.E)</strong></h2>
 								<h3>G.C.E O/L : 8A, B <br> G.C.E A/L: A, B & C</h3>
-								<details>
+								<details class="gce">
 									<summary>Show details</summary>
 									<ul>
 										<!--
@@ -557,7 +556,7 @@
 				// When date is less than 18 but month is not January,
 			} else if (today.getDate() < 18) {
 				years = today.getFullYear() - birthday.getFullYear();
-				// getMonth() returns 0 - 11
+				// getMonth() returns 0 - 11 (months in numbers, starting with 0)
 				// If March 28, this will return 2.
 				months = today.getMonth() - 1;
 				days = today.getDate() + 13;

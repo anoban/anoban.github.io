@@ -47,7 +47,6 @@ body {
     text-align: center;
 }
 
-/* //-- core typography and style -- */
 #hd h1 {
     font-size: 48px;
     text-transform: uppercase;
@@ -125,7 +124,6 @@ p.enlarge span {
     border-bottom: 0
 }
 
-
 a#pdf,
 a#media {
     display: inline-block;
@@ -185,8 +183,6 @@ div.job p {
     padding: 0
 }
 
-
-
 #srt-ttab {
     margin-bottom: 100px;
     text-align: center;
@@ -196,7 +192,6 @@ div.job p {
     margin-top: 20px
 }
 
-/* --// override to force 1/8th width grids -- */
 .yui-gf .yui-u {
     width: 80.2%;
 }
