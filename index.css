@@ -137,12 +137,10 @@ a#media {
     text-decoration: none;
 }
 
-a#pdf:hover {
-    background: #222;
-}
-
+a#pdf:hover,
 a#media:hover {
-    background: #222;
+    background: #d02020;
+    color: #fdfff4;
 }
 
 div.job {
