@@ -2,24 +2,31 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: normal;
     font-size: 100%;
-    background: #FDFFF4;
+    width: 80%;
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-left: 10%;
+    background: #fdfff4;
+    border: solid #038e34;
+    border-width: 12px 1px 12px 2px;
+    border-radius: 5px;
 }
 
 li.creds-list-category {
-    margin-left: 10%;
+    margin-left: 2%;
 }
 
 img.folder-icon {
-    width: 40px;
-    height: 40px;
+    width: 4%;
+    height: 4%;
     padding-top: 10px;
 }
 
 h3.cred-type {
     font-size: 160%;
     font-style: italic;
-    padding-left: 10px;
-    padding-bottom: 10px;
+    padding-left: 1%;
+    padding-bottom: 1%;
 }
 
 h1 {
@@ -51,7 +58,7 @@ th {
 
 table.creds-table {
     border: 2px solid;
-    width: 90%;
+    width: 98%;
 }
 
 table.creds-table tr td.title {
